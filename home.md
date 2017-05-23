@@ -25,7 +25,6 @@ var address = $('.address')[0];
 var data = $('.data')[0];
 var storage = $('.storage')[0];
 var unit = $('.unit')[0];
-var mult=8;
 //storage=data*2^(address)
 //log(storage/data)/log(2)=address
 //data=storage/(2^(address))
@@ -33,15 +32,17 @@ var mult=8;
 
 
 $(".calc-add").click(function(event) {
-alert("Math.log(("+storage.value+"*("+mult+"*"+unit.value+"))/"+data.value+")/Math.log(2)")
-address.value = Math.log((storage.value*(mult*unit.value))/data.value)/Math.log(2);
+var mult=8*unit.value;
+address.value = (Math.log((mult*storage.value)/data.value))/(Math.log(2))
 });
 
 $(".calc-data").click(function(event) {
-data.value = (storage.value*(mult*unit.value))/(2^(address.value));
+var mult=8*unit.value;
+data.value = storage.value*mult*(2^(-address.value));
 });
 
 $(".calc-storage").click(function(event) {
-storage.value = (data.value*2^(address.value))/(mult*unit.value);
+var mult=8*unit.value;
+storage.value = (data.value*2^(address.value))/mult;
 });
 </script>
