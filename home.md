@@ -2,7 +2,7 @@
 layout: default
 permalink: /404.html
 ---
-<form action="/action_page.php">
+<form>
 Address: <input type="number" name="address" class="address" value="8">-bit<br>
 Data: <input type="number" name="data" class="data" value="4">-bit<br>
 Storage: <input type="number" name="storage" class="storage" value="">-bit<br>
