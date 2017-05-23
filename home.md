@@ -31,13 +31,13 @@ $(".calc").submit(function(event) {
 //data=storage/(2^(address))
 //address=Math.log(storage/data)/Math.log(2)
 if(address.value == ""){
-address.value = Math.log((storage.value*(mult*/unit.value))/data.value)/Math.log(2)
+address.value = Math.log((storage.value*(mult*unit.value))/data.value)/Math.log(2)
 }
 if(data.value == ""){
-data.value = (storage.value*(mult*/unit.value))/(2^(address.value))
+data.value = (storage.value*(mult*unit.value))/(2^(address.value))
 }
 if(storage.value == ""){
-storage.value = (data.value*2^(address.value))/(mult*/unit.value);
+storage.value = (data.value*2^(address.value))/(mult*unit.value);
 }
 });
 </script>
