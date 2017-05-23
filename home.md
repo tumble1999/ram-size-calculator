@@ -33,6 +33,7 @@ var mult=8;
 
 
 $(".calc-add").click(function(event) {
+alert("Math.log(("+storage.value+"*("+mult+"*"+unit.value+"))/"+data.value+")/Math.log(2)")
 address.value = Math.log((storage.value*(mult*unit.value))/data.value)/Math.log(2);
 });
 
