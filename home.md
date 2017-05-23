@@ -8,14 +8,14 @@ Address: <input type="text" class="address" value="4">-bit<br>
 Storage: <input type="text" class="storage" value=""><select class="unit">
 <option value="0.125">bits</option>
   <option value="1">B</option>
-  <option value="1,024">KB</option>
-  <option value="1,048,576">MB</option>
-  <option value="1,073,741,824">GB</option>
-  <option value="1,099,511,627,776">TB</option>
-  <option value="1,125,899,906,842,624">PB</option>
-  <option value="1,152,921,504,606,846,976">EB</option>
-  <option value="1,180,591,620,717,411,303,424">ZB</option>
-  <option value="1,208,925,819,614,629,174,706,176">YB</option>
+  <option value="1024">KB</option>
+  <option value="1048576">MB</option>
+  <option value="1073741824">GB</option>
+  <option value="1099511627776">TB</option>
+  <option value="1125899906842624">PB</option>
+  <option value="1152921504606846976">EB</option>
+  <option value="1180591620717411303424">ZB</option>
+  <option value="1208925819614629174706176">YB</option>
 </select><br>
 <input type="submit" class="calc-add" value="Calculate Address"><input type="submit" class="calc-data" value="Calculate Data"><input type="submit" class="calc-storage" value="Calculate Storage">
 </form>
