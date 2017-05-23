@@ -10,14 +10,11 @@ Storage: <input type="number" class="storage" value="">-bit<br>
 </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
-var address;
-var data;
-var storage;
+var address = $('.address')[0];
+var data = $('.data')[0];
+var storage = $('.storage')[0];
 var mult = 8000;
 $(".calc").submit(function(event) {
-address = $('.address')[0];
-data = $('.data')[0];
-storage = $('.storage')[0];
 //storage=data*2^(address)
 //log(storage/data)/log(2)=address
 //data=storage/(2^(address))
