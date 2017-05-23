@@ -6,6 +6,7 @@ permalink: /404.html
 Address: <input type="number" class="address" value="8">-bit<br>
 Data: <input type="number" class="data" value="4">-bit<br>
 Storage: <input type="number" class="storage" value=""><select class="unit">
+<option value="1/8">bits</option>
   <option value="1">B</option>
   <option value="1,024">KB</option>
   <option value="1,048,576">MB</option>
