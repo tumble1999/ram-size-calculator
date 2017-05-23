@@ -38,11 +38,11 @@ address.value = (Math.log((mult*parseFloat(storage.value))/parseFloat(data.value
 
 $(".calc-data").click(function(event) {
 var mult=8*parseFloat(unit.value);
-data.value = parseFloat(storage.value)*mult*(2^(-parseFloat(address.value)));
+data.value = parseFloat(storage.value)*mult*( Math.pow(2,-parseFloat(address.value) ) );
 });
 
 $(".calc-storage").click(function(event) {
 var mult=8*parseFloat(unit.value);
-storage.value = (parseFloat(data.value)*2^(parseFloat(address.value)))/mult;
+storage.value = (parseFloat(data.value)*Math.pow( 2,parseFloat(address.value))  )/mult;
 });
 </script>
