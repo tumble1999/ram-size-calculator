@@ -16,7 +16,7 @@ Storage: <input type="number" class="storage" value=""><select class="unit">
   <option value="1,180,591,620,717,411,303,424">ZB</option>
   <option value="1,208,925,819,614,629,174,706,176">YB</option>
 </select><br>
-<input type="submit" value="Submit">
+<input type="submit" class="calc-add" value="Calculate Address"><input type="submit" class=calc-data" value="Calculate Data"><input type="submit" class="calc-storage" value="Calculate Storage">
 </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
@@ -25,19 +25,21 @@ var data = $('.data')[0];
 var storage = $('.storage')[0];
 var unit = $('.unit')[0];
 var mult=8;
-$(".calc").submit(function(event) {
 //storage=data*2^(address)
 //log(storage/data)/log(2)=address
 //data=storage/(2^(address))
 //address=Math.log(storage/data)/Math.log(2)
-if(address.value == ""){
-address.value = Math.log((storage.value*(mult*unit.value))/data.value)/Math.log(2)
-}
-if(data.value == ""){
-data.value = (storage.value*(mult*unit.value))/(2^(address.value))
-}
-if(storage.value == ""){
+
+
+$(".calc-add").click(function(event) {
+address.value = Math.log((storage.value*(mult*unit.value))/data.value)/Math.log(2);
+});
+
+$(".calc-data").click(function(event) {
+data.value = (storage.value*(mult*unit.value))/(2^(address.value));
+});
+
+$(".calc-storage").click(function(event) {
 storage.value = (data.value*2^(address.value))/(mult*unit.value);
-}
 });
 </script>
