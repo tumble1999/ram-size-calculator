@@ -32,17 +32,17 @@ var unit = $('.unit')[0];
 
 
 $(".calc-add").click(function(event) {
-var mult=8*parseInt(unit.value);
-address.value = (Math.log((mult*parseInt(storage.value))/parseInt(data.value)))/(Math.log(2))
+var mult=8*parseFloat(unit.value);
+address.value = (Math.log((mult*parseFloat(storage.value))/parseFloat(data.value)))/(Math.log(2))
 });
 
 $(".calc-data").click(function(event) {
-var mult=8*parseInt(unit.value);
-data.value = parseInt(storage.value)*mult*(2^(-parseInt(address.value)));
+var mult=8*parseFloat(unit.value);
+data.value = parseFloat(storage.value)*mult*(2^(-parseFloat(address.value)));
 });
 
 $(".calc-storage").click(function(event) {
-var mult=8*parseInt(unit.value);
-storage.value = (parseInt(data.value)*2^(parseInt(address.value)))/mult;
+var mult=8*parseFloat(unit.value);
+storage.value = (parseFloat(data.value)*2^(parseFloat(address.value)))/mult;
 });
 </script>
