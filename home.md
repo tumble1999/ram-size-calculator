@@ -16,7 +16,7 @@ Storage: <input type="number" class="storage" value=""><select class="unit">
   <option value="1,180,591,620,717,411,303,424">ZB</option>
   <option value="1,208,925,819,614,629,174,706,176">YB</option>
 </select><br>
-<input type="submit" class="calc-add" value="Calculate Address"><input type="submit" class=calc-data" value="Calculate Data"><input type="submit" class="calc-storage" value="Calculate Storage">
+<input type="submit" class="calc-add" value="Calculate Address"><input type="submit" class="calc-data" value="Calculate Data"><input type="submit" class="calc-storage" value="Calculate Storage">
 </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
