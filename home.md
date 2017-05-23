@@ -5,7 +5,7 @@ permalink: /404.html
 <form class="calc" action="javascript:null;">
 Data: <input type="text" class="data" value="8">-bit<br>
 Address: <input type="text" class="address" value="4">-bit<br>
-Storage: <input type="textr" class="storage" value=""><select class="unit">
+Storage: <input type="text" class="storage" value=""><select class="unit">
 <option value="0.125">bits</option>
   <option value="1">B</option>
   <option value="1,024">KB</option>
