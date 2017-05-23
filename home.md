@@ -2,7 +2,7 @@
 layout: default
 permalink: /404.html
 ---
-<form class="calc">
+<form class="calc" action="javascript:alert( 'success!' );">
 Address: <input type="number" class="address" value="8">-bit<br>
 Data: <input type="number" class="data" value="4">-bit<br>
 Storage: <input type="number" class="storage" value="">-bit<br>
