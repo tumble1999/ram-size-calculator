@@ -3,9 +3,9 @@ layout: default
 permalink: /404.html
 ---
 <form class="calc" action="javascript:null;">
-Data: <input type="number" class="data" value="8">-bit<br>
-Address: <input type="number" class="address" value="4">-bit<br>
-Storage: <input type="number" class="storage" value=""><select class="unit">
+Data: <input type="text" class="data" value="8">-bit<br>
+Address: <input type="text" class="address" value="4">-bit<br>
+Storage: <input type="textr" class="storage" value=""><select class="unit">
 <option value="0.125">bits</option>
   <option value="1">B</option>
   <option value="1,024">KB</option>
