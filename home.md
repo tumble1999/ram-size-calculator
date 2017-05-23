@@ -3,8 +3,8 @@ layout: default
 permalink: /404.html
 ---
 <form class="calc" action="javascript:null;">
-Address: <input type="number" class="address" value="8">-bit<br>
-Data: <input type="number" class="data" value="4">-bit<br>
+Data: <input type="number" class="data" value="8">-bit<br>
+Address: <input type="number" class="address" value="4">-bit<br>
 Storage: <input type="number" class="storage" value=""><select class="unit">
 <option value="0.125">bits</option>
   <option value="1">B</option>
