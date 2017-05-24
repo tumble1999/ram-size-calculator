@@ -32,20 +32,18 @@ var unit = $('.unit')[0];
 
 
 $(".calc-add").click(function(event) {
-var mult=8*parseFloat(unit.value);
-address.value = (Math.log((mult*parseFloat(storage.value))/parseFloat(data.value)))/(Math.log(2))
+address.value = (Math.log((getMult()*parseFloat(storage.value))/parseFloat(data.value)))/(Math.log(2))
 });
 
 $(".calc-data").click(function(event) {
-var mult=8*parseFloat(unit.value);
-data.value = parseFloat(storage.value)*mult*( Math.pow(2,-parseFloat(address.value) ) );
+data.value = parseFloat(storage.value)*getMult()*( Math.pow(2,-parseFloat(address.value) ) );
 });
 
 $(".calc-storage").click(function(event) {
-var mult=8*parseFloat(unit.value);
-storage.value = (parseFloat(data.value)*Math.pow( 2,parseFloat(address.value))  )/mult;
+storage.value = (parseFloat(data.value)*Math.pow( 2,parseFloat(address.value))  )/getMult();
 });
 
 function getMult() {
+return Math.pow(parseFloat(unit.value.split(" ")[0]) ,parseFloat(unit.value.split(" ")[1]));
 }
 </script>
