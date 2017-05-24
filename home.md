@@ -86,5 +86,7 @@ $('.unit').on('change', function() {
 
 $('.custom').on('input', function() {
 unit.value = "custom";
+console.log("custom");
+$('span.custom').show();
 })
 </script>
