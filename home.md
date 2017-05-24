@@ -45,7 +45,12 @@ var data = $('.data')[0];
 var storage = $('.storage')[0];
 var unit = $('.unit')[0];
 var custom = $('input.custom')[0];
-custom.value = unit.value
+if(simpleCustom){
+custom.value = Math.pow(parseFloat(this.value.split(" ")[0]),parseFloat(this.value.split(" ")[1]));
+}
+else {
+custom.value = unit.value;
+}
 //storage=data*2^(address)
 //log(storage/data)/log(2)=address
 //data=storage/(2^(address))
