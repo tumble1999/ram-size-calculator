@@ -78,13 +78,11 @@ permalink: /404.html
     function getMult() {
         var mult;
         if (unit.value == "custom") {
-
             if (powerCustom) {
                 mult = Math.pow(parseFloat(custom.value.split(" ")[0]), parseFloat(custom.value.split(" ")[1]));
             } else {
                 mult = parseFloat(custom.value);
             }
-
             return mult;
         } else {
             mult = Math.pow(parseFloat(unit.value.split(" ")[0]), parseFloat(custom.value.split(" ")[1]));
