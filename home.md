@@ -84,7 +84,7 @@ $('.unit').on('change', function() {
   }
 })
 
-$('.custom').on('change', function() {
-unit.val("custom");
+$('.custom').on('input', function() {
+unit.value = "custom";
 })
 </script>
