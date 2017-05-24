@@ -63,10 +63,10 @@ storage.value = (parseFloat(data.value)*Math.pow( 2,parseFloat(address.value))  
 
 function getMult() {
 if(unit.value=="custom"){
-return Math.pow(parseFloat(unit.value.split(" ")[0]) ,parseFloat(unit.value.split(" ")[1]));
+return Math.pow(parseFloat(unit.value.split(" ")[0]),parseFloat(unit.value.split(" ")[1]));
 }
 else{
-return Math.pow(parseFloat(custom.value.split(" ")[0]) ,parseFloat(custom.value.split(" ")[1]));
+return Math.pow(parseFloat(custom.value.split(" ")[0]),parseFloat(custom.value.split(" ")[1]));
 }
 }
 $('.unit').on('change', function() {
