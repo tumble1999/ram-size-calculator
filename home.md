@@ -32,10 +32,12 @@ Storage: <input type="text" class="storage" value=""><select class="unit">
   <option value="custom">Custom</option>
   </optgroup>
   </select><br>
+  <span class="custom">Custom Multiplyer<input type="text" class="san" value=""><br></span>
 <input type="submit" class="calc-data" value="Calculate Data"><input type="submit" class="calc-add" value="Calculate Address"><input type="submit" class="calc-storage" value="Calculate Storage">
 </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
+$('span.custom').hide();
 var address = $('.address')[0];
 var data = $('.data')[0];
 var storage = $('.storage')[0];
@@ -63,7 +65,11 @@ return Math.pow(parseFloat(unit.value.split(" ")[0]) ,parseFloat(unit.value.spli
 }
 $('.unit').on('change', function() {
   if(this.value=="custom"){
-  console.log("custem");
+  console.log("custem");#
+  $('span.custom').show();
+  }
+  else{
+  $('span.custom').hide();
   }
 })
 </script>
