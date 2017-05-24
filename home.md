@@ -65,17 +65,17 @@ storage.value = (parseFloat(data.value)*Math.pow( 2,parseFloat(address.value))  
 function getMult() {
 var mult;
 if(unit.value=="custom"){
-mult = Math.pow(parseFloat(unit.value.split(" ")[0]),parseFloat(unit.value.split(" ")[1]));
+mult = Math.pow(parseFloat(custom.value.split(" ")[0]),parseFloat(unit.value.split(" ")[1]));
 return mult;
 }
 else{
-mult = Math.pow(parseFloat(custom.value.split(" ")[0]),parseFloat(custom.value.split(" ")[1]));
+mult = Math.pow(parseFloat(unit.value.split(" ")[0]),parseFloat(custom.value.split(" ")[1]));
 return mult;
 }
 }
 $('.unit').on('change', function() {
   if(this.value=="custom"){
-  console.log("custem");
+  console.log("custom");
   $('span.custom').show();
   }
   else{
