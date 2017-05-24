@@ -61,4 +61,7 @@ storage.value = (parseFloat(data.value)*Math.pow( 2,parseFloat(address.value))  
 function getMult() {
 return Math.pow(parseFloat(unit.value.split(" ")[0]) ,parseFloat(unit.value.split(" ")[1]));
 }
+$('.unit').on('change', function() {
+  alert( this.value );
+})
 </script>
