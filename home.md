@@ -73,7 +73,7 @@ mult = Math.pow(parseFloat(unit.value.split(" ")[0]),parseFloat(custom.value.spl
 return mult;
 }
 }
-unit.on('change', function() {
+$('.unit').on('change', function() {
   if(this.value=="custom"){
   console.log("custom");
   $('span.custom').show();
@@ -84,7 +84,7 @@ unit.on('change', function() {
   }
 })
 
-custom.on('change', function() {
+$('.custom').on('change', function() {
 unit.val("custom");
 })
 </script>
