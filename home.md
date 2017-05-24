@@ -62,6 +62,8 @@ function getMult() {
 return Math.pow(parseFloat(unit.value.split(" ")[0]) ,parseFloat(unit.value.split(" ")[1]));
 }
 $('.unit').on('change', function() {
-  alert( this.value );
+  if(this.value=="custom"){
+  console.log("custem");
+  }
 })
 </script>
