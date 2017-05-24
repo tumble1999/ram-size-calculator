@@ -32,7 +32,7 @@ Storage: <input type="text" class="storage" value=""><select class="unit">
   <option value="custom">Custom</option>
   </optgroup>
   </select><br>
-  <span class="custom">Custom Multiplyer<input type="text" class="san" value=""><br></span>
+  <span class="custom">Custom Multiplyer<input type="text" class="custom" value=""><br></span>
 <input type="submit" class="calc-data" value="Calculate Data"><input type="submit" class="calc-add" value="Calculate Address"><input type="submit" class="calc-storage" value="Calculate Storage">
 </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
