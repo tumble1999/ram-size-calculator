@@ -6,7 +6,7 @@ permalink: /404.html
 Data: <input type="text" class="data" value="8">-bit<br>
 Address: <input type="text" class="address" value="4">-bit<br>
 Storage: <input type="text" class="storage" value=""><select class="unit">
-  <option>---BINARY---</option>
+  <optgroup label="Binary">
   <option value="2 0">bits</option>
   <option value="1 0">B</option>
   <option value="1024">KB</option>
@@ -17,7 +17,8 @@ Storage: <input type="text" class="storage" value=""><select class="unit">
   <option value="1152921504606846976">EB</option>
   <option value="1180591620717411303424">ZB</option>
   <option value="1208925819614629174706176">YB</option>
-  <option>---DECIMAL---</option>
+  </optgroup>
+  <optgroup label="Decimal">
   <option value="1 0">B</option>
   <option value="1024">KB</option>
   <option value="1048576">MB</option>
@@ -27,8 +28,10 @@ Storage: <input type="text" class="storage" value=""><select class="unit">
   <option value="1152921504606846976">EB</option>
   <option value="1180591620717411303424">ZB</option>
   <option value="1208925819614629174706176">YB</option>
-  <option>----------</option>
+  </optgroup>
+  <optgroup label="Other">
   <option value="custom">Custom</option>
+  </optgroup>
   </select><br>
 <input type="submit" class="calc-data" value="Calculate Data"><input type="submit" class="calc-add" value="Calculate Address"><input type="submit" class="calc-storage" value="Calculate Storage">
 </form>
