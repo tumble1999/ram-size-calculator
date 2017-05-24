@@ -6,8 +6,8 @@ permalink: /404.html
 Data: <input type="text" class="data" value="8">-bit<br>
 Address: <input type="text" class="address" value="4">-bit<br>
 Storage: <input type="text" class="storage" value=""><select class="unit">
-<option value="0.125">bits</option>
-  <option value="1">B</option>
+  <option class="face" value="0.125">bits</option>
+  <option class="nose" value="1">B</option>
   <option value="1024">KB</option>
   <option value="1048576">MB</option>
   <option value="1073741824">GB</option>
@@ -45,4 +45,8 @@ $(".calc-storage").click(function(event) {
 var mult=8*parseFloat(unit.value);
 storage.value = (parseFloat(data.value)*Math.pow( 2,parseFloat(address.value))  )/mult;
 });
+
+function getMult() {
+
+}
 </script>
