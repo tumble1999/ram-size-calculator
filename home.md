@@ -46,10 +46,10 @@ var storage = $('.storage')[0];
 var unit = $('.unit')[0];
 var custom = $('input.custom')[0];
 if(simpleCustom){
-custom.value = Math.pow(parseFloat(this.value.split(" ")[0]),parseFloat(this.value.split(" ")[1]));
+custom.value = unit.value;
 }
 else {
-custom.value = unit.value;
+custom.value = Math.pow(parseFloat(this.value.split(" ")[0]),parseFloat(this.value.split(" ")[1]));
 }
 //storage=data*2^(address)
 //log(storage/data)/log(2)=address
@@ -74,7 +74,7 @@ var mult;
 if(unit.value=="custom"){
 
 if(simpleCustom){
-mult = parseFloat(custom.value)
+mult = parseFloat(custom.value);
 }
 else{
 mult = Math.pow(parseFloat(custom.value.split(" ")[0]),parseFloat(unit.value.split(" ")[1]));
@@ -94,10 +94,10 @@ $('.unit').on('change', function() {
   }
   else{
   if(simpleCustom){
-  custom.value = Math.pow(parseFloat(this.value.split(" ")[0]),parseFloat(this.value.split(" ")[1]));
+  custom.value = this.value;
   }
   else{
-  custom.value = this.value;
+  custom.value = Math.pow(parseFloat(this.value.split(" ")[0]),parseFloat(this.value.split(" ")[1]));
   }
   $('span.custom').hide();
   }
