@@ -37,6 +37,8 @@ Storage: <input type="text" class="storage" value=""><select class="unit">
 </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
+var simpleCustom = false;
+
 $('span.custom').hide();
 var address = $('.address')[0];
 var data = $('.data')[0];
@@ -65,7 +67,14 @@ storage.value = (parseFloat(data.value)*Math.pow( 2,parseFloat(address.value))  
 function getMult() {
 var mult;
 if(unit.value=="custom"){
+
+if(simpleCustom){
+mult = parseFloat(custom.value)
+}
+else{
 mult = Math.pow(parseFloat(custom.value.split(" ")[0]),parseFloat(unit.value.split(" ")[1]));
+}
+
 return mult;
 }
 else{
@@ -79,7 +88,7 @@ $('.unit').on('change', function() {
   $('span.custom').show();
   }
   else{
-  custom.value = this.value
+  custom.value = Math.pow(parseFloat(this.value.split(" ")[0]),parseFloat(this.value.split(" ")[1]));
   $('span.custom').hide();
   }
 })
