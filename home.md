@@ -43,6 +43,7 @@ var data = $('.data')[0];
 var storage = $('.storage')[0];
 var unit = $('.unit')[0];
 var custom = $('input.custom')[0];
+custom.value = unit.value
 //storage=data*2^(address)
 //log(storage/data)/log(2)=address
 //data=storage/(2^(address))
@@ -62,11 +63,14 @@ storage.value = (parseFloat(data.value)*Math.pow( 2,parseFloat(address.value))  
 });
 
 function getMult() {
+var mult;
 if(unit.value=="custom"){
-return Math.pow(parseFloat(unit.value.split(" ")[0]),parseFloat(unit.value.split(" ")[1]));
+mult = Math.pow(parseFloat(unit.value.split(" ")[0]),parseFloat(unit.value.split(" ")[1]));
+return mult;
 }
 else{
-return Math.pow(parseFloat(custom.value.split(" ")[0]),parseFloat(custom.value.split(" ")[1]));
+mult = Math.pow(parseFloat(custom.value.split(" ")[0]),parseFloat(custom.value.split(" ")[1]));
+return mult;
 }
 }
 $('.unit').on('change', function() {
@@ -75,6 +79,7 @@ $('.unit').on('change', function() {
   $('span.custom').show();
   }
   else{
+  custom.value = this.value
   $('span.custom').hide();
   }
 })
