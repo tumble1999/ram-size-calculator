@@ -111,10 +111,14 @@ $('span.custom').show();
 
 function toggleCustom() {
 powerCustom = !powerCustom;
-var status = function(bool){
-if(bool){return "On";}else{return "Off"}
+var status;
+if(bool){
+status = "On";
 }
-console.log("Power Custom: " + status(powerCustom) ));
+else{
+status = "Off";
+}
+console.log("Power Custom: " + status);
 if(powerCustom){
 custom.value = unit.value;
 }
