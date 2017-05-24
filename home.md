@@ -5,7 +5,8 @@ permalink: /404.html
 <form class="calc" action="javascript:null;">
 Data: <input type="text" class="data" value="8">-bit<br>
 Address: <input type="text" class="address" value="4">-bit<br>
-Storage: <input type="text" class="storage" value=""><select><option><select class="unit">
+Storage: <input type="text" class="storage" value=""><select class="unit">
+  <option>---BINARY---</option>
   <option value="2 0">bits</option>
   <option value="1 0">B</option>
   <option value="1024">KB</option>
@@ -16,8 +17,7 @@ Storage: <input type="text" class="storage" value=""><select><option><select cla
   <option value="1152921504606846976">EB</option>
   <option value="1180591620717411303424">ZB</option>
   <option value="1208925819614629174706176">YB</option>
-</select></option>
-<option><select class="unit">
+  <option>---DECIMAL---</option>
   <option value="1 0">B</option>
   <option value="1024">KB</option>
   <option value="1048576">MB</option>
@@ -27,7 +27,9 @@ Storage: <input type="text" class="storage" value=""><select><option><select cla
   <option value="1152921504606846976">EB</option>
   <option value="1180591620717411303424">ZB</option>
   <option value="1208925819614629174706176">YB</option>
-  </select></option></select><br>
+  <option>----------</option>
+  <option value="custom">Custom</option>
+  </select><br>
 <input type="submit" class="calc-data" value="Calculate Data"><input type="submit" class="calc-add" value="Calculate Address"><input type="submit" class="calc-storage" value="Calculate Storage">
 </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
