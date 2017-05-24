@@ -88,7 +88,12 @@ $('.unit').on('change', function() {
   $('span.custom').show();
   }
   else{
+  if(simpleCustom){
   custom.value = Math.pow(parseFloat(this.value.split(" ")[0]),parseFloat(this.value.split(" ")[1]));
+  }
+  else{
+  custom.value = this.value;
+  }
   $('span.custom').hide();
   }
 })
