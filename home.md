@@ -101,13 +101,13 @@ permalink: /404.html
             }
             $('span.custom').hide();
         }
-    })
+    });
 
     $('.custom').on('input', function() {
         unit.value = "custom";
         console.log("custom");
         $('span.custom').show();
-    })
+    });
 
     function toggleCustom() {
         powerCustom = !powerCustom;
