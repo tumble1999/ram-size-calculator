@@ -85,7 +85,7 @@ permalink: /404.html
             }
             return mult;
         } else {
-            mult = Math.pow(parseFloat(unit.value.split(" ")[0]), parseFloat(custom.value.split(" ")[1]));
+            mult = Math.pow(parseFloat(unit.value.split(" ")[0]), parseFloat(unit.value.split(" ")[1]));
             return mult;
         }
     }
