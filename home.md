@@ -49,7 +49,7 @@ if(simpleCustom){
 custom.value = unit.value;
 }
 else {
-custom.value = Math.pow(parseFloat(custom.value.split(" ")[0]),parseFloat(custom.value.split(" ")[1]));
+custom.value = Math.pow(parseFloat(unit.value.split(" ")[0]),parseFloat(unit.value.split(" ")[1]));
 }
 //storage=data*2^(address)
 //log(storage/data)/log(2)=address
@@ -74,10 +74,10 @@ var mult;
 if(unit.value=="custom"){
 
 if(simpleCustom){
-mult = parseFloat(custom.value);
+mult = Math.pow(parseFloat(custom.value.split(" ")[0]),parseFloat(custom.value.split(" ")[1]));
 }
 else{
-mult = Math.pow(parseFloat(custom.value.split(" ")[0]),parseFloat(custom.value.split(" ")[1]));
+mult = parseFloat(custom.value);
 }
 
 return mult;
