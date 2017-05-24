@@ -65,7 +65,7 @@ return Math.pow(parseFloat(unit.value.split(" ")[0]) ,parseFloat(unit.value.spli
 }
 $('.unit').on('change', function() {
   if(this.value=="custom"){
-  console.log("custem");#
+  console.log("custem");
   $('span.custom').show();
   }
   else{
