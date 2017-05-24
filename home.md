@@ -37,7 +37,7 @@ Storage: <input type="text" class="storage" value=""><select class="unit">
 </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
-var simpleCustom = false;
+var powerCustom = false;
 
 $('span.custom').hide();
 var address = $('.address')[0];
@@ -45,7 +45,7 @@ var data = $('.data')[0];
 var storage = $('.storage')[0];
 var unit = $('.unit')[0];
 var custom = $('input.custom')[0];
-if(simpleCustom){
+if(powerCustom){
 custom.value = unit.value;
 }
 else {
@@ -73,7 +73,7 @@ function getMult() {
 var mult;
 if(unit.value=="custom"){
 
-if(simpleCustom){
+if(powerCustom){
 mult = Math.pow(parseFloat(custom.value.split(" ")[0]),parseFloat(custom.value.split(" ")[1]));
 }
 else{
@@ -93,7 +93,7 @@ $('.unit').on('change', function() {
   $('span.custom').show();
   }
   else{
-  if(simpleCustom){
+  if(powerCustom){
   custom.value = this.value;
   }
   else{
@@ -108,4 +108,18 @@ unit.value = "custom";
 console.log("custom");
 $('span.custom').show();
 })
+
+function toggleCustom() {
+powerCustom = !powerCustom;
+var status = function(bool){
+if(bool){return "On";}else{return "Off"}
+}
+console.log("Power Custom: " + status(powerCustom) ));
+if(powerCustom){
+custom.value = unit.value;
+}
+else{
+custom.value = Math.pow(parseFloat(unit.value.split(" ")[0]),parseFloat(unit.value.split(" ")[1]));
+}
+}
 </script>
