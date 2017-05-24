@@ -8,7 +8,7 @@ Address: <input type="text" class="address" value="4">-bit<br>
 Storage: <input type="text" class="storage" value=""><select class="unit">
   <optgroup label="Binary">
   <option value="2 0">bits</option>
-  <option value="2 3">B Byte</option>
+  <option value="2 3">B</option>
   <option value="2 13">KiB </option>
   <option value="2 23">MiB</option>
   <option value="2 33">GiB</option>
