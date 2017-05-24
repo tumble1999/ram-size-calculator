@@ -112,7 +112,7 @@ $('span.custom').show();
 function toggleCustom() {
 powerCustom = !powerCustom;
 var status;
-if(bool){
+if(powerCustom){
 status = "On";
 }
 else{
