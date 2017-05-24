@@ -8,26 +8,25 @@ Address: <input type="text" class="address" value="4">-bit<br>
 Storage: <input type="text" class="storage" value=""><select class="unit">
   <optgroup label="Binary">
   <option value="2 0">bits</option>
-  <option value="1 0">B</option>
-  <option value="1024">KB</option>
-  <option value="1048576">MB</option>
-  <option value="1073741824">GB</option>
-  <option value="1099511627776">TB</option>
-  <option value="1125899906842624">PB</option>
-  <option value="1152921504606846976">EB</option>
-  <option value="1180591620717411303424">ZB</option>
-  <option value="1208925819614629174706176">YB</option>
+  <option value="2 3">B Byte</option>
+  <option value="2 13">KiB </option>
+  <option value="2 23">MiB</option>
+  <option value="2 33">GiB</option>
+  <option value="2 43">TiB</option>
+  <option value="2 53">PiB</option>
+  <option value="2 63">EiB</option>
+  <option value="2 73">ZiB</option>
+  <option value="2 83">YiB</option>
   </optgroup>
   <optgroup label="Decimal">
-  <option value="1 0">B</option>
-  <option value="1024">KB</option>
-  <option value="1048576">MB</option>
-  <option value="1073741824">GB</option>
-  <option value="1099511627776">TB</option>
-  <option value="1125899906842624">PB</option>
-  <option value="1152921504606846976">EB</option>
-  <option value="1180591620717411303424">ZB</option>
-  <option value="1208925819614629174706176">YB</option>
+  <option value="1000 1">KB</option>
+  <option value="1000 2">MB</option>
+  <option value="1000 3">GB</option>
+  <option value="1000 4">TB</option>
+  <option value="1000 5">PB</option>
+  <option value="1000 6">EB</option>
+  <option value="1000 7">ZB</option>
+  <option value="1000 8">YB</option>
   </optgroup>
   <optgroup label="Other">
   <option value="custom">Custom</option>
