@@ -141,7 +141,7 @@ title: Home
         var notification = document.querySelector('.mdl-js-snackbar');
         notification.MaterialSnackbar.showSnackbar(
           {
-            message: '"Power Custom: " + status
+            message: "Power Custom: " + status
           }
         );
         if (powerCustom) {
