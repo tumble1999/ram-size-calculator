@@ -3,6 +3,16 @@ layout: default
 permalink: /404.html
 ---
 <form class="calc" action="javascript:null;">
+ <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input data" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="data">
+    <label class="mdl-textfield__label" for="data">Data</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+   <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="address">
+    <label class="mdl-textfield__label" for="sample2">Address</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
     Data: <input type="text" class="data" value="8"/>
     -bit<br/>
     Address: <input type="text" class="address" value="4"/>
