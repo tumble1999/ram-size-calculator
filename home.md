@@ -109,6 +109,10 @@ title: Home
     var storage = $('#storage')[0];
     var unit = $('#unit')[0];
     var custom = $('input#custom')[0];
+    
+    data.value = 8;
+    address.value = 4;
+    
     if (powerCustom) {
         custom.type = "text";
         custom.value = unit.value;
