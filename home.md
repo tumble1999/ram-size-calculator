@@ -4,17 +4,17 @@ permalink: /404.html
 title: Home
 ---
 <form class="calc" action="javascript:null;">
- <div class="mdl-textfield mdl-js-textfield">
+ <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
     <input class="mdl-textfield__input data" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="data">
     <label class="mdl-textfield__label" for="data">Data</label>
     <span class="mdl-textfield__error">Input is not a number!</span>
   </div>-bit<br>
-   <div class="mdl-textfield mdl-js-textfield">
+   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
     <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="address">
     <label class="mdl-textfield__label" for="address">Address</label>
     <span class="mdl-textfield__error">Input is not a number!</span>
   </div>-bit<br>
-  <div class="mdl-textfield mdl-js-textfield">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
     <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="storage">
     <label class="mdl-textfield__label" for="storage">Storage</label>
     <span class="mdl-textfield__error">Input is not a number!</span>
