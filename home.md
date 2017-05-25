@@ -66,10 +66,6 @@ title: Home
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
     var powerCustom = false;
-    
-    'use strict';
-  var snackbarContainer = document.querySelector('#demo-toast-example');
-  var showToastButton = document.querySelector('#demo-show-toast');
 
     $('span#custom').hide();
     var address = $('#address')[0];
@@ -142,6 +138,12 @@ title: Home
             status = "Off";
         }
         console.log("Power Custom: " + status);
+        var notification = document.querySelector('.mdl-js-snackbar');
+        notification.MaterialSnackbar.showSnackbar(
+          {
+            message: '"Power Custom: " + status
+          }
+        );
         if (powerCustom) {
             custom.value = unit.value;
         } else {
