@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /404.html
+title: Home
 ---
 <form class="calc" action="javascript:null;">
  <div class="mdl-textfield mdl-js-textfield">
