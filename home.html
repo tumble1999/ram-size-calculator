@@ -126,7 +126,7 @@ title: Home
 
     $(".calc-add").click(function(event) {
      if(!address.parentElement.hasClass("is-dirty")){
-      address.parentElement.addClass("is-dirty");
+      address.parentElement.classList.add("is-dirty");
      }
         address.value = (Math.log((getMult() * parseFloat(storage.value)) / parseFloat(data.value))) / (Math.log(2))
     });
@@ -142,7 +142,7 @@ title: Home
     $(".calc-storage").click(function(event) {
      
      if(!storage.parentElement.hasClass("is-dirty")){
-   storage.parentElement.addClass("is-dirty");
+   storage.parentElement.classList.add("is-dirty");
      }
         storage.value = (parseFloat(data.value) * Math.pow(2, parseFloat(address.value))) / getMult();
     });
@@ -175,7 +175,7 @@ title: Home
             }
          
      if(!custom.parentElement.hasClass("is-dirty")){
-      custom.parentElement.addClass("is-dirty");
+      custom.parentElement.classList.add("is-dirty");
      }
             $('span.custom').hide();
         }
@@ -208,7 +208,7 @@ title: Home
             custom.value = Math.pow(parseFloat(unit.value.split(" ")[0]), parseFloat(unit.value.split(" ")[1]));
         }
      if(!custom.parentElement.hasClass("is-dirty")){
-      custom.parentElement.addClass("is-dirty");
+      custom.parentElement.classList.add("is-dirty");
      }
     }
 </script>
