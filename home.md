@@ -18,6 +18,42 @@ title: Home
     <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="storage">
     <label class="mdl-textfield__label" for="storage">Storage</label>
     <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+  <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+        <select class="mdl-selectfield__select" id="unit" name="unit">
+        <optgroup label="Binary">
+            <option value="2 0">bits</option>
+            <option value="2 3">B</option>
+            <option value="2 13">KiB </option>
+            <option value="2 23">MiB</option>
+            <option value="2 33">GiB</option>
+            <option value="2 43">TiB</option>
+            <option value="2 53">PiB</option>
+            <option value="2 63">EiB</option>
+            <option value="2 73">ZiB</option>
+            <option value="2 83">YiB</option>
+        </optgroup>
+        <optgroup label="Decimal">
+            <option value="1000 1">KB</option>
+            <option value="1000 2">MB</option>
+            <option value="1000 3">GB</option>
+            <option value="1000 4">TB</option>
+            <option value="1000 5">PB</option>
+            <option value="1000 6">EB</option>
+            <option value="1000 7">ZB</option>
+            <option value="1000 8">YB</option>
+        </optgroup>
+        <optgroup label="Other">
+            <option value="custom">Custom</option>
+        </optgroup>
+        </select>
+        <label class="mdl-selectfield__label" for="unit">Unit</label>
+      </div>
+    </form><br>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="custom">
+    <label class="mdl-textfield__label" for="custom">Custom Multiplier</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
   </div><br>
     Data: <input type="text" class="data" value="8"/>
     -bit<br/>
@@ -74,8 +110,10 @@ title: Home
     var unit = $('#unit')[0];
     var custom = $('input#custom')[0];
     if (powerCustom) {
+        custom.type = "text";
         custom.value = unit.value;
     } else {
+         custom.type = "number";
         custom.value = Math.pow(parseFloat(unit.value.split(" ")[0]), parseFloat(unit.value.split(" ")[1]));
     }
     //storage=data*2^(address)
@@ -115,8 +153,10 @@ title: Home
             $('span.custom').show();
         } else {
             if (powerCustom) {
+                custom.type = "text";
                 custom.value = this.value;
             } else {
+                custom.type = "number";
                 custom.value = Math.pow(parseFloat(this.value.split(" ")[0]), parseFloat(this.value.split(" ")[1]));
             }
             $('span.custom').hide();
@@ -126,7 +166,7 @@ title: Home
     $('#custom').on('input', function() {
         unit.value = "custom";
         console.log("custom");
-        $('span#custom').show();
+        $('span.custom').show();
     });
 
     function toggleCustom() {
