@@ -50,9 +50,9 @@ title: Home
         <label class="mdl-textfield__label" for="unit">Unit</label>
       </div>
     </form><br>
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
     <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="custom">
-    <label class="mdl-textfield__label" for="custom">Custom Multiplier</label>
+    <label class="mdl-textfield__label" for="custom"><span class="custom">Custom </span> Multiplier</label>
     <span class="mdl-textfield__error">Input is not a number!</span>
   </div><br>
     Data: <input type="text" class="data" value="8"/>
@@ -89,11 +89,11 @@ title: Home
     </select>
     <br/>
     <span class="custom">Custom </span>
-    Multiplyer: <input type="text" class="custom" value=""/>
+    Multiplyer: <input type="text" class="custom" value />
     <br/>
-    <input type="submit" class="calc-data" value="Calculate Data"/>
-    <input type="submit" class="calc-add" value="Calculate Address"/>
-    <input type="submit" class="calc-storage" value="Calculate Storage"/>
+    <input type="submit" class="calc-data" value="Calculate Data">
+    <input type="submit" class="calc-add" value="Calculate Address">
+    <input type="submit" class="calc-storage" value="Calculate Storage">
 </form>
 <div class="mdl-snackbar mdl-js-snackbar">
   <div class="mdl-snackbar__text"></div>
@@ -103,7 +103,7 @@ title: Home
 <script>
     var powerCustom = false;
 
-    $('span#custom').hide();
+    $('span.custom').hide();
     var address = $('#address')[0];
     var data = $('#data')[0];
     var storage = $('#storage')[0];
