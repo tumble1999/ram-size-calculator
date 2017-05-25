@@ -51,10 +51,10 @@ title: Home
       </div>
     </form><br>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="custom">
-    <label class="mdl-textfield__label" for="custom"><span class="custom">Custom </span> Multiplier</label>
-    <span class="mdl-textfield__error">Input is not a number!</span>
-  </div><br>
+       <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="custom">
+       <label class="mdl-textfield__label" for="custom"><span class="custom">Custom </span> Multiplier</label>
+       <span class="mdl-textfield__error">Input is not a number!</span>
+    </div><br>
     Data: <input type="text" class="data" value="8"/>
     -bit<br/>
     Address: <input type="text" class="address" value="4"/>
