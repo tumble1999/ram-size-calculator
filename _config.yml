@@ -16,7 +16,7 @@
 title: Ram Size Calculator
 description: >
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tumble1999.github.io/ram-size-calculator/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://tumble1999.github.io/ram-size-calculator" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
 production: true
 favicon: https://tumble1999.github.io/favicon.gif
