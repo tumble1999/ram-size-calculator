@@ -56,43 +56,10 @@ title: Home
        <label class="mdl-textfield__label" for="custom"><span class="custom">Custom </span> Multiplier</label>
        <span class="mdl-textfield__error">Input is not a number!</span>
     </div><br>
-    Data: <input type="text" class="data" value="8">-bit<br>
-    Address: <input type="text" class="address" value="4">-bit<br>
-    Storage: <input type="text" class="storage" value="">
-    <select class="unit">
-        <optgroup label="Binary">
-            <option value="2 0">bits</option>
-            <option value="2 3">B</option>
-            <option value="2 13">KiB </option>
-            <option value="2 23">MiB</option>
-            <option value="2 33">GiB</option>
-            <option value="2 43">TiB</option>
-            <option value="2 53">PiB</option>
-            <option value="2 63">EiB</option>
-            <option value="2 73">ZiB</option>
-            <option value="2 83">YiB</option>
-        </optgroup>
-        <optgroup label="Decimal">
-            <option value="1000 1">KB</option>
-            <option value="1000 2">MB</option>
-            <option value="1000 3">GB</option>
-            <option value="1000 4">TB</option>
-            <option value="1000 5">PB</option>
-            <option value="1000 6">EB</option>
-            <option value="1000 7">ZB</option>
-            <option value="1000 8">YB</option>
-        </optgroup>
-        <optgroup label="Other">
-            <option value="custom">Custom</option>
-        </optgroup>
-    </select>
-    <br/>
-    <span class="custom">Custom </span>
-    Multiplyer: <input type="text" class="custom" value />
-    <br/>
-    <input type="submit" class="calc-data" value="Calculate Data">
-    <input type="submit" class="calc-add" value="Calculate Address">
-    <input type="submit" class="calc-storage" value="Calculate Storage">
+    
+    <input type="submit" class="calc-data mdl-button mdl-js-button mdl-button--raised" value="Calculate Data">
+    <input type="submit" class="calc-add mdl-button mdl-js-button mdl-button--raised" value="Calculate Address">
+    <input type="submit" class="calc-storage mdl-button mdl-js-button mdl-button--raised mdl-button--colored" value="Calculate Storage">
 </form>
 <div class="mdl-snackbar mdl-js-snackbar">
   <div class="mdl-snackbar__text"></div>
