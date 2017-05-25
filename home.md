@@ -5,7 +5,7 @@ title: Home
 ---
 <form class="calc" action="javascript:null;">
  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <input class="mdl-textfield__input data" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="data">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="data">
     <label class="mdl-textfield__label" for="data">Data</label>
     <span class="mdl-textfield__error">Input is not a number!</span>
   </div>-bit<br>
@@ -59,16 +59,24 @@ title: Home
     <input type="submit" class="calc-add" value="Calculate Address"/>
     <input type="submit" class="calc-storage" value="Calculate Storage"/>
 </form>
+<div class="mdl-snackbar mdl-js-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button class="mdl-snackbar__action" type="button"></button>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
     var powerCustom = false;
+    
+    'use strict';
+  var snackbarContainer = document.querySelector('#demo-toast-example');
+  var showToastButton = document.querySelector('#demo-show-toast');
 
-    $('span.custom').hide();
-    var address = $('.address')[0];
-    var data = $('.data')[0];
-    var storage = $('.storage')[0];
-    var unit = $('.unit')[0];
-    var custom = $('input.custom')[0];
+    $('span#custom').hide();
+    var address = $('#address')[0];
+    var data = $('#data')[0];
+    var storage = $('#storage')[0];
+    var unit = $('#unit')[0];
+    var custom = $('input#custom')[0];
     if (powerCustom) {
         custom.value = unit.value;
     } else {
@@ -105,7 +113,7 @@ title: Home
             return mult;
         }
     }
-    $('.unit').on('change', function() {
+    $('#unit').on('change', function() {
         if (this.value == "custom") {
             console.log("custom");
             $('span.custom').show();
@@ -119,10 +127,10 @@ title: Home
         }
     });
 
-    $('.custom').on('input', function() {
+    $('#custom').on('input', function() {
         unit.value = "custom";
         console.log("custom");
-        $('span.custom').show();
+        $('span#custom').show();
     });
 
     function toggleCustom() {
