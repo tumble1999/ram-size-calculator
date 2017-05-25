@@ -170,9 +170,11 @@ title: Home
           }
         );
         if (powerCustom) {
+            custom.type = "text";
             custom.value = unit.value;
         } else {
-            custom.value = Math.pow(parseFloat(unit.value.split(" ")[0]), parseFloat(unit.value.split(" ")[1]));
+         custom.type = "number";
+         custom.value = Math.pow(parseFloat(unit.value.split(" ")[0]), parseFloat(unit.value.split(" ")[1]));
         }
      if(!custom.parentElement.classList.contains("is-dirty")){
       custom.parentElement.classList.add("is-dirty");
