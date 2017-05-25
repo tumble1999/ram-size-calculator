@@ -19,8 +19,8 @@ title: Home
     <label class="mdl-textfield__label" for="storage">Storage</label>
     <span class="mdl-textfield__error">Input is not a number!</span>
   </div>
-  <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
-        <select class="mdl-selectfield__select" id="unit" name="unit">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <select class="mdl-textfield__input" id="unit" name="unit">
         <optgroup label="Binary">
             <option value="2 0">bits</option>
             <option value="2 3">B</option>
@@ -47,7 +47,7 @@ title: Home
             <option value="custom">Custom</option>
         </optgroup>
         </select>
-        <label class="mdl-selectfield__label" for="unit">Unit</label>
+        <label class="mdl-textfield__label" for="unit">Unit</label>
       </div>
     </form><br>
   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
